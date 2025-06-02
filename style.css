@@ -17,7 +17,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: #f8f9fa;
+  background-color: #4caf50;
 }
 
 .logo {
@@ -25,17 +25,24 @@ body {
   font-weight: bold;
 }
 
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
+.nav {
+  display: flex;          /* makes children line up horizontally */
+  align-items: center;    /* vertically center the items */
+  gap: 20px;              /* space between image and links */
 }
 
-.nav-links a {
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;              /* space between each link */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
   text-decoration: none;
-  color: #333;
-  font-size: 1.1rem;
-  font-weight: 500;
+  color: #333;            /* or your preferred color */
+  font-weight: 600;
 }
 
 /* Hero Section */
@@ -67,13 +74,15 @@ body {
 
 .btn {
   padding: 1rem 2rem;
-  background-color: #007bff;
+  background-color: #ff6600;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
 }
-
+.btn:hover {
+  background-color: #cc5200;
+}
 /* Footer */
 .footer {
   background-color: #222;
@@ -106,4 +115,3 @@ body {
     font-size: 1rem;
   }
 }
-
